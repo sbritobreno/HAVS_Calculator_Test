@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <script defer src="./src/js/index.js"></script>
+    <title>HAVS Calculator</title>
+  </head>
+  <body>
+    <section>
+      <h1>HAVS Calculator</h1>
+      <form class="form_container">
+        <label for="tool">Tool:</label>
+        <p>What tool are you using?</p>
+        <input
+          type="text"
+          id="tool"
+          name="tool"
+          placeholder="e.g. Hammer drill"
+        />
+        <label for="output">Output (m/s²):</label>
+        <p>What vibration level?</p>
+        <input type="number" id="output" name="output" placeholder="10" />
+        <label for="minutes">Minutes:</label>
+        <p>How long will you use it?</p>
+        <input type="number" id="minutes" name="minutes" placeholder="25" />
+        <input type="submit" id="btn_submit" value="Calculate" />
+      </form>
+      <div class="result_container hidden">
+        <h3>Results</h3>
+        <p class="result_string"></p>
+        <h3 class="limit_exceded_string"></h3>
+      </div>
+    </section>
+  </body>
+</html>
